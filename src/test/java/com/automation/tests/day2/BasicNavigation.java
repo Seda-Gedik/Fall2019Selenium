@@ -38,8 +38,9 @@ public class BasicNavigation {
         }else{
             System.out.println("TEST FAILED!!");
         }
-//comeback to google
- driver.navigate().back();
+        //comeback to google
+        driver.navigate().back();
+        Thread.sleep(3000);//for demo, wait 3 seconds
 
  // checking if page title is equals to Google
  // .getTitle()- returns page title
