@@ -52,10 +52,14 @@ verifyEquals(driver.getTitle(),"Google");
         System.out.println("Title: "+driver.getTitle());
         //driver.getTitle() - returns page title of the page that is currently opened
 
+       driver.navigate().refresh(); // to reload page
+        Thread.sleep(3000);//for demo, wait 3 seconds
 
+        // driver.navigate().to(). = driver.get()
         // must be at the end
         driver.close(); // to close browser
         // browser cannot close itself
+
 /**
  * Check if to strings are same. If print TEST PASSED! message.
  * Otherwise, print TEST FAILED message
