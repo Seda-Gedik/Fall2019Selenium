@@ -12,8 +12,8 @@ public class BasicNavigation {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
    // In selenium, everything starts from WebDriver interface
-        driver.get("http://google.com"); // to open s website
-        System.out.println();
+        driver.get("http://google.com"); // to open a website
+
 
     }
 }
