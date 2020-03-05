@@ -44,6 +44,13 @@ public class BasicNavigation {
  // checking if page title is equals to Google
  // .getTitle()- returns page title
 verifyEquals(driver.getTitle(),"Google");
+//move forward in the browser history
+        //again, going to amazon
+        driver.navigate().forward();
+        Thread.sleep(3000);//for demo, wait 3 seconds
+        System.out.println("Title: "+driver.getTitle());
+        //driver.getTitle() - returns page title of the page that is currently opened
+
 
         // must be at the end
         driver.close(); // to close browser
