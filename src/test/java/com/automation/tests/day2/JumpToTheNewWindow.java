@@ -42,7 +42,8 @@ String windowHandle = driver.getWindowHandle();
         System.out.println("After Switch:" +driver.getCurrentUrl());
 
 
-driver.close();
+//driver.close();
+driver.quit();
 
 
     }
