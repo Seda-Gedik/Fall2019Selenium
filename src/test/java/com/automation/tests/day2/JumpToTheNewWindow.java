@@ -27,9 +27,41 @@ String windowHandle = driver.getWindowHandle();
         Set<String> windowHandles = driver.getWindowHandles();
 
         System.out.println(windowHandles);
+        System.out.println("Before Switch :" +driver.getCurrentUrl());
 
         // since we have all windows
         // and we know id of original window
         // we can say switch to something that is not equals to old window id
+      for(String windowId: windowHandles){
+          // if it's not an old window,then switch
+         if(!windowId.equals(windowHandles)){
+             // to jump to the new window
+             driver.switchTo().window(windowId);
+         }
+      }
+        System.out.println("After Switch:" +driver.getCurrentUrl());
+
+
+driver.close();
+
+
     }
+
+    /**
+     *
+     * This method helps to switch in between windows based on page title
+     * @param pageTitle
+     * @param driver
+     */
+    public static void switchToWindowBasedOnTitle(String pageTitle, WebDriver driver){
+        Set<String> windows = driver.getWindowHandles();
+        for (String window : windows) {
+            driver.switchTo().window(window);
+            if (driver.getTitle().equals(pageTitle)) {
+                break;
+            }
+        }
+
+    }
+
 }
