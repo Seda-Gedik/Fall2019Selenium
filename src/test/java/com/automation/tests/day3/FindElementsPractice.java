@@ -23,7 +23,15 @@ WebElement email = driver.findElement(By.name("email"));
 email.sendKeys("sdet@cybertek.com");
 
 WebElement signUp =  driver.findElement(By.name("wooden_spoon"));
-signUp.click();
+// when you see type="submit", you can use submit() instead of click()
+// it make sense to use when click() method doesn't work
+// signUp.click();
+signUp.submit();
+
+
+
+
+
         driver.quit(); // to close everything
 
     }
