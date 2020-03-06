@@ -35,7 +35,7 @@ signUp.submit();
 String expected = "Thank you for signing up. Click the button below to return to the home page.";
 WebElement message = driver.findElement(By.className("subheader"));
 
-String actual = message.getText();
+String actual = message.getText(); // To get the text <h3>Text</h3>
 
         if(expected.equals(actual)){
             System.out.println("TEST PASSED");
