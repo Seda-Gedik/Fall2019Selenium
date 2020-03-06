@@ -37,13 +37,7 @@ public class GoogleSearchTest {
         WebElement news = driver.findElement(By.linkText("News"));
         news.click();//to click on the element
         Thread.sleep(4000);
-
-
-
-
-
-
-
+        //bitti
 driver.quit();
 
     }
