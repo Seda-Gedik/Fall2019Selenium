@@ -10,5 +10,7 @@ public class FindElementsPractice {
 
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+
+
     }
 }
