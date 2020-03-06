@@ -32,7 +32,10 @@ WebElement signUp =  driver.findElement(By.name("wooden_spoon"));
 signUp.submit();
         Thread.sleep(3000);
 
+String expected = "Thank you for signing up. Click the button below to return to the home page.";
+WebElement message = driver.findElement(By.className("subheader"));
 
+String actual = message.getText();
 
 
         driver.quit(); // to close everything
