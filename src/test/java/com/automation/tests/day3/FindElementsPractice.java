@@ -15,19 +15,22 @@ public class FindElementsPractice {
     //    WebDriver driver = new ChromeDriver();
 WebDriver driver = DriverFactory.createADriver("chrome");
 driver.get("http://practice.cybertekschool.com/sign_up");
-Thread.sleep(4000);
+Thread.sleep(3000);
 
         WebElement fullName = driver.findElement(By.name("full_name"));
         fullName.sendKeys("Mister Twister");
+        Thread.sleep(3000);
+
 WebElement email = driver.findElement(By.name("email"));
 email.sendKeys("sdet@cybertek.com");
+        Thread.sleep(3000);
 
 WebElement signUp =  driver.findElement(By.name("wooden_spoon"));
 // when you see type="submit", you can use submit() instead of click()
 // it make sense to use when click() method doesn't work
 // signUp.click();
 signUp.submit();
-
+        Thread.sleep(3000);
 
 
 
