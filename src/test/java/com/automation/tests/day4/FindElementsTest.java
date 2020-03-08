@@ -26,9 +26,16 @@ public class FindElementsTest {
             System.out.println();
         }
 
+        for (int i = 1; i <links.size() ; i++) {
+            links.get(i).click();
+            Thread.sleep(2000);
 
+            driver.navigate().back();
+       Thread.sleep(1000);
 
-
+            //refresh list
+            links = driver.findElements(By.tagName("a"));
+        }
         driver.quit();
 
 
