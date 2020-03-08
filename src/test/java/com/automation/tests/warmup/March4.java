@@ -100,12 +100,10 @@ public class March4 {
 
             //enter search term `selenium webdriver` & click on search button
             driver.findElement(By.id("searchInput")).sendKeys("selenium webdriver", Keys.RETURN);
-
             Thread.sleep(3000);
 
             //click on search result `Selenium (software)`
             driver.findElement(By.partialLinkText("Selenium (software)")).click();
-
             Thread.sleep(2000);
 
             String link = driver.getCurrentUrl(); // to get link as a String
