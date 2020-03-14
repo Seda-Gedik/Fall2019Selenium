@@ -14,7 +14,7 @@ public class TestForIFrame {
         WebDriverManager.chromedriver().version("79").setup();
         WebDriver driver = new ChromeDriver();
         driver.get("http://practice.cybertekschool.com/iframe");
-        BrowserUtils.wait(4);
+        BrowserUtils.wait(3);
 
         // before looking for that element, we need to jump to that frame
         // you can specify: name, id, index or webelement of the frame
@@ -24,12 +24,12 @@ public class TestForIFrame {
 
         WebElement textInput = driver.findElement(By.id("tinymce"));
         System.out.println(textInput.getText());
-        BrowserUtils.wait(4);
+        BrowserUtils.wait(3);
 
         textInput.clear();//to delete text
         textInput.sendKeys("Hello, World!");
 
-        BrowserUtils.wait(4);
+        BrowserUtils.wait(3);
 
         //exit from the frame
         driver.switchTo().defaultContent();
