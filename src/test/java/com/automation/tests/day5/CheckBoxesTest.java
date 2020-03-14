@@ -49,6 +49,7 @@ public class CheckBoxesTest {
 
 
 
+
 driver.quit();
     }
 }
