@@ -23,11 +23,9 @@ public class SelectByIndex {
         stateSelect.selectByIndex(stateSelect.getOptions().size()-1);
 
 
+
         BrowserUtils.wait(3);
         driver.quit();
-
-
-
 
     }
 }
