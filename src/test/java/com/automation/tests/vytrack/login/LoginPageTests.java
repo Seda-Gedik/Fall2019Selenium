@@ -1,4 +1,4 @@
-package com.automation.tests.day9_vytrack.login;
+package com.automation.tests.vytrack.login;
 
 import com.automation.tests.utilities.BrowserUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
