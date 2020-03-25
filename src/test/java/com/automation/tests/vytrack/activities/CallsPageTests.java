@@ -14,7 +14,6 @@ import org.testng.annotations.Test;
 
 public class CallsPageTests {
 
-
     private By usernameBy = By.id("prependedInput");
     private By passwordBy = By.id("prependedInput2");
     private WebDriver driver;
