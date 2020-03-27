@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.HashMap;
+
 public class VyTrackOH {
     public static void main(String[] args) throws InterruptedException {
 
@@ -31,11 +33,27 @@ public class VyTrackOH {
         Thread.sleep(3000);
         String currentTitle = driver.getTitle();
         if (currentTitle.equalsIgnoreCase("Create Contact - Contacts - Customers")){
-            System.out.println("Titlle is expected");
+            System.out.println("Title is expected");
 
         }else{
             System.out.println("Title is Not expexted");
         }
+
+
+        HashMap <String, String> contact1 = new HashMap<>();
+        contact1.put("First Name", "Jhon");
+        contact1.put("Last Name" , "Smith");
+        contact1.put("Phone","571-236-44545");
+        contact1.put("Street" , "400 Main Street");
+        contact1.put("City", "Tysons");
+        contact1.put("State","VA");
+        contact1.put("Zip Code", "22102");
+        contact1.put("Group" , "true");
+        contact1.put("Country", "United States");
+
+        System.out.println("contact1 : " + contact1 );
+
+
 
 
     }
